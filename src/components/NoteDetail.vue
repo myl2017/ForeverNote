@@ -9,7 +9,7 @@
                     <span> 更新日期：{{curNote.updatedAtFriendly}}</span>
                     <span> {{statusText}}</span>
                     <span class="iconfont icon-delete" @click="onDeleteNote"></span>
-                    <span class="iconfont icon-view" @click="isShowPreview = !isShowPreview"></span>
+                    <span class="iconfont icon-fullscreen" @click="isShowPreview = !isShowPreview"></span>
                     <!--<span class="iconfont icon-edit" @click="isShowPreview = isShowPreview"></span>-->
                 </div>
                 <div class="note-title">
@@ -35,7 +35,7 @@
     import  _  from  'lodash'
     import MarkdownIt from  'markdown-it'
     import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
-    import { codemirror } from 'vue-codemirror'
+    import {codemirror} from 'vue-codemirror'
     import 'codemirror/lib/codemirror.css'
     import 'codemirror/mode/markdown/markdown.js'
     import 'codemirror/theme/neat.css'
@@ -96,5 +96,5 @@
 </script>
 <style rel="stylesheet/less" lang="less" scoped>
     @import url(../assets/css/note-detail.less);
-    @import url(//at.alicdn.com/t/font_754780_nw3rw72dqx.css);
+    /*@import url(//at.alicdn.com/t/font_754780_nw3rw72dqx.css);*/
 </style>
